@@ -4,15 +4,6 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Welcome to my showcase site. 
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+My name is Frederic Suares, I'm located in Brooklyn, New York, and I'm looking to write technical articles about Saas, data science, MLOps, cryptocurrency, or anything similar. You can get in touch with me via my email address fredericsuares@gmail.com or LinkedIn: https://www.linkedin.com/in/fredericsuares/
