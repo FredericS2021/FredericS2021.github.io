@@ -1,5 +1,5 @@
 ---
-layout: notebook
+layout: post
 title: 'Bound' Prediction Project
 ---
 
