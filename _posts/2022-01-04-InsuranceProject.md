@@ -1,8 +1,3 @@
----
-layout: post
-title: 'Bound' Prediction Project
----
------
 # 'Bound' Prediction Project
 ### by Frederic Suares
 
