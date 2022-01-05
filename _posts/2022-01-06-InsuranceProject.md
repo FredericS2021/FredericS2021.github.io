@@ -4,20 +4,24 @@
 -----
 ## Results
 
-I was tasked with analysis of an insurance company's dataset. The binary outcome variable was called 'Bound' , ie. whether or not a policy was purchased. 
+I analysed an insurance company's sample policyholders' dataset. The binary outcome variable was called 'Bound' , i.e. whether or not a policy was purchased. I cleaned the dataset and dealt with missing/redudant values, which was a relatively minor issue after looking at the data. It is a very clean dataset. 
 
-I completed an EDA in which I had several interesting findings:
-* When the outcome variable was Bound = 1, the data doesn't go up to as recently as when the outcome variable = 0 (see line graph in section 2). 
+The bulk of the analysis focused on the feature variables, which were comprised of zipcode, categorical, geographic, and numeric policy values. I was unable to obtain a zip code analysis, so the most meaningful variables that remained were categorical. The policy values were suprisingly uncorrelated with the outcome.
 
-* I also noticed out of the ordinary results with regard to the Written Premium's correlation. This was analysed with regard to the AgencyTier and the Bound outcome variable. (see boxplot at end of section 2):
+I completed an EDA with several interesting findings:
+* When the outcome variable was Bound = 1, the data stops approximately a quarter before (04-2021) compared to when the outcome variable = 0 (07-2021) (see line graph in section 2). 
 
-    * A better agency tier does not always correspond to a higher median written premium when the policy is bound 
+* I also noticed out of the ordinary results with regard to the Written Premium's correlation. This was analysed with dependent on AgencyTier and the Bound outcome variable. (see boxplot at end of section 2):
+
+    * A better agency tier does not always correspond to a higher median written premium when the policy is bound. 
     
     * Also, when it comes to policies that were not bound, the written premium distribution is the same no matter the agency tier!
     
-    * Both of these require further examination/analysis to determine the reasons for these patterns in the data.
+    * Both of these require further examination to determine the reasons for these patterns in the data.
 
-I also build out a time-based variable based on the original time-based features that is more helpful that the original two (due to the higher correlation with the outcome variable). See the heatmap in section 2.
+I also build out a time-based variable using the original time-based features that is more helpful (meaning, has a higher correlation to the outcome variable) than the original two. My inspiration came from previous experience in real estate price prediction, where I looked at sales premium over list price, as a percentage. That ended up being predictor in the final model. Here I did something similar: I took the difference between these 'Submission Date' and 'Effective Date' features, creating an intuitive and powerful 'time until policy goes into effect' feature. See the heatmap in section 2.
+
+With some further analysis and problem specific feedback/knowledge, I will build out a full predictive pipeline that could be used for finding new clients that are most likely to purchase a policy after being quoted.
 
 -----
 
