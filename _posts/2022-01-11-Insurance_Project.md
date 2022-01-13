@@ -2,9 +2,9 @@
 ### by Frederic Suares
 
 -----
-## Results
+## Abstract
 
-I analysed an insurance company's sample policyholders' dataset. The binary outcome variable was called 'Bound' , i.e. whether or not a policy was purchased. I cleaned the dataset and dealt with missing/redudant values, which was a relatively minor issue after looking at the data. It is a very clean dataset. 
+The goal here was a thorough initial analysis of an insurance company's sample policyholders' dataset. The binary outcome variable was called 'Bound' , i.e. whether or not a policy was purchased. I cleaned the dataset and dealt with missing/redudant values, which was a relatively minor issue after looking at the data. It is a very clean dataset. 
 
 The bulk of the analysis focused on the feature variables, which were comprised of zipcode, categorical, geographic, and numeric policy values. I was unable to obtain a zip code analysis, so the most meaningful variables that remained were categorical. The policy values were suprisingly uncorrelated with the outcome.
 
@@ -19,7 +19,7 @@ I completed an EDA with several interesting findings:
     
     * Both of these require further examination to determine the reasons for these patterns in the data.
 
-I also build out a time-based variable using the original time-based features that is more helpful (meaning, has a higher correlation to the outcome variable) than the original two. My inspiration came from previous experience in real estate price prediction, where I looked at sales premium over list price, as a percentage. That ended up being predictor in the final model. Here I did something similar: I took the difference between these 'Submission Date' and 'Effective Date' features, creating an intuitive and powerful 'time until policy goes into effect' feature. See the heatmap in section 2.
+I also built out a time-based variable using the original time-based features that is more helpful (meaning, has a higher correlation to the outcome variable) than the original two. My inspiration came from previous experience in real estate price prediction, where I looked at sales premium over list price, as a percentage. That ended up being predictor in the final model. Here I did something similar: I took the difference between these 'Submission Date' and 'Effective Date' features, creating an intuitive and powerful 'time until policy goes into effect' feature. See the heatmap in section 2.
 
 With some further analysis and problem specific feedback/knowledge, I will build out a full predictive pipeline that could be used for finding new clients that are most likely to purchase a policy after being quoted.
 
